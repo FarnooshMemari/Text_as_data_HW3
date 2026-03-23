@@ -13,11 +13,10 @@ with open("data/train_core_vs_neg.json", "r", encoding="utf-8") as f:
 with open("data/test_core_vs_neg.json", "r", encoding="utf-8") as f:
     test_data = json.load(f)
 
-
-train_texts = [doc["text"] for doc in train_data]
-train_labels = [doc["label"] for doc in train_data]
-test_texts = [doc["text"] for doc in test_data]
-test_labels = [doc["label"] for doc in test_data]
+train_texts = [doc[0] for doc in train_data]
+train_labels = [doc[1] for doc in train_data]
+test_texts = [doc[0] for doc in test_data]
+test_labels = [doc[1] for doc in test_data]
 
 # ── TF-IDF vectorization (same settings as Week 09) ─────────────────
 vectorizer = TfidfVectorizer(min_df=5, max_df=0.95)

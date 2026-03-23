@@ -1,0 +1,22 @@
+L2 Baseline — Evaluation Results
+==================================================
+
+Confusion Matrix:
+[[1906   75]
+ [ 131 1798]]
+
+Classification Report:
+              precision    recall  f1-score   support
+
+     NEG (0)     0.9357    0.9621    0.9487      1981
+    CORE (1)     0.9600    0.9321    0.9458      1929
+
+    accuracy                         0.9473      3910
+   macro avg     0.9478    0.9471    0.9473      3910
+weighted avg     0.9477    0.9473    0.9473      3910
+
+ROC AUC: 0.9867
+
+Non-zero coefficients: 16198
+Total coefficients: 16198
+Sparsity ratio: 1.0000

@@ -1,0 +1,22 @@
+L1 Model — Evaluation Results
+==================================================
+
+Confusion Matrix:
+[[1981    0]
+ [   6 1923]]
+
+Classification Report:
+              precision    recall  f1-score   support
+
+     NEG (0)     0.9970    1.0000    0.9985      1981
+    CORE (1)     1.0000    0.9969    0.9984      1929
+
+    accuracy                         0.9985      3910
+   macro avg     0.9985    0.9984    0.9985      3910
+weighted avg     0.9985    0.9985    0.9985      3910
+
+ROC AUC: 0.9998
+
+Non-zero coefficients: 29
+Total coefficients: 16198
+Sparsity ratio: 0.0018
